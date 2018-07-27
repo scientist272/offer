@@ -13,26 +13,28 @@ package com.charlie.offer;
  则它位于前一个子数组内，最小元素在中间元素之后。反之同理。
  */
 public class findMin {
-	public static int findMin(int[] array) {
-		int low = 0;
-		int high = array.length - 1;
-		while (low < high) {
-			int mid = (low + high) / 2;
-			if (array[mid] > array[high]) {
-				low = mid + 1; // 如果中间的大于最后的，说明最小的后面一半的子数组中
-			} else if (array[mid] == array[high]) {
-				high = high - 1;
-			} else {
-				high = mid; // 如果中间的小于最后的，说明最小的前面一半的子数组中
-			}
-		}
+    public static int findMin(int[] array) {
+        int low = 0;
+        int high = array.length - 1;
+        while (low < high) {
+            int mid = (low + high) / 2;
+            if (array[mid] > array[high]) {
+                low = mid + 1; // 如果中间的大于最后的，说明最小的后面一半的子数组中
+            } else if (array[mid] == array[high]) {
+                high = high - 1;
+            } else {
+                high = mid; // 如果中间的小于最后的，说明最小的前面一半的子数组中
+            }
+        }
 
-		return array[low];
+        return array[low];
 
-	}
+    }
 
-	public static void main(String[] args) {
-		int[] array = { 3, 4, 5, 1, 2 };
-		System.out.println(findMin(array));
-	}
+
+    public static void main(String[] args) {
+        int[] array = {3, 4, 5, 1, 2};
+        System.out.println(findMin(array));
+
+    }
 }
