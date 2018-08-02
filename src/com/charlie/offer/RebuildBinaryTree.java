@@ -18,8 +18,8 @@ public class RebuildBinaryTree {
     /**
      * 输入某二叉树的前序遍历和中序遍历的结果，请重建出该二节树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。
      *
-     * @param preorder 前序遍历
-     * @param inorder  中序遍历
+     * @param preOrder 前序遍历
+     * @param inOrder  中序遍历
      * @return 树的根结点
      */
   
@@ -31,10 +31,10 @@ public class RebuildBinaryTree {
     /**
      * 输入某二叉树的前序遍历和中序遍历的结果，请重建出该二节树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。
      *
-     * @param preorder 前序遍历
+     * @param preOrder 前序遍历
      * @param ps       前序遍历的开始位置
      * @param pe       前序遍历的结束位置
-     * @param inorder  中序遍历
+     * @param inOrder  中序遍历
      * @param is       中序遍历的开始位置
      * @param ie       中序遍历的结束位置
      * @return 树的根结点
