@@ -19,7 +19,7 @@ public class Power {
             exp = -exp;
         }
 
-        double result = powerWithUnsigned(base, exponent);
+        double result = powerWithUnsigned(base, exp);
 
         //指数小于0，结果变成倒数
         if (exponent < 0) {
