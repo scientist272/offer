@@ -38,7 +38,7 @@ public class Power {
             return base;
         }
 
-        double result = power(base, exponent >> 1); //右移一位代替除2，效率更高
+        double result = powerWithUnsigned(base, exponent >> 1); //右移一位代替除2，效率更高
         result *= result;
 
         //如果exponent为奇数，则再乘一个base
